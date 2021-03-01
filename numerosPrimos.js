@@ -15,3 +15,8 @@ var num = parseInt(process.argv[2]);
     }else {
         console.log("O número " + num + " não é primo");
     }
+
+/*
+Para passar o argumento no node, o comando no terminal seria por exemplo: 
+node numerosPrimos.js 15
+*/
