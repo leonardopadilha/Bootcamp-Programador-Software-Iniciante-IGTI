@@ -9,10 +9,22 @@ Saída
 Imprima todos os valores ímpares de 1 até X, inclusive X, se for o caso.
 */
 
-var num = process.argv[2];
-
-for(var i = 0; i < num;i++){
-    if(i % 2 !== 0){
-        console.log(i);
+function numerosImpares(num){
+    for(var i = 0; i <= num;i++){
+        if(i % 2 !== 0){
+            console.log(i);
+        }
     }
 }
+
+function numerosImparesInverso(num){
+    for(var i = num; i >= 0; i--){
+        if(i % 2 !== 0){
+            console.log(i);
+        }
+    }
+}
+
+numerosImpares(8);
+console.log(" ");
+numerosImparesInverso(8);
